@@ -24,12 +24,12 @@ allprojects {
 }
 
 ext {
-    siteUrl = 'https://github.com/xxx/xxxx'
-    gitUrl = 'https://github.com/xxxx/xxxx.git'
+    siteUrl = 'https://github.com/Shamao/RouterManager'
+    gitUrl = 'git@github.com:Shamao/RouterManager.git'
     group = "com.louise.lsd.virouter"
     version = "1.0"
-    id = 'xxx'
-    name = 'xxx'
+    id = 'VIRouter'
+    name = 'VIRouter'
     email =  'liusaideng@gmail.com'
     packaging = 'aar'
 
