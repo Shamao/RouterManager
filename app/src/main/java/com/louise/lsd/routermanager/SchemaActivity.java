@@ -22,7 +22,7 @@ public class SchemaActivity extends AppCompatActivity {
             return;
         }
 
-        RouterManager.getInstance().go(this, uri);
+//        RouterManager.getInstance().go(this, uri);
     }
 
     @Override

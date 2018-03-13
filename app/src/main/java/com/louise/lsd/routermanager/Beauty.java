@@ -3,7 +3,6 @@ package com.louise.lsd.routermanager;
 import android.app.Application;
 
 import com.louise.lsd.routermanager.router.RouterManager;
-import com.louise.lsd.routermanager.user.UserFactory;
 
 /**
  * @author lsd
@@ -15,6 +14,6 @@ public class Beauty extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        RouterManager.getInstance().register("user", UserFactory.getInstance());
+        RouterManager.getInstance().register("beauty://xxx/second",SecondActivity.class);
     }
 }

@@ -1,12 +1,15 @@
 package com.louise.lsd.routermanager;
 
 import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.louise.lsd.routermanager.annotation.Router;
 import com.louise.lsd.routermanager.router.RouterManager;
 
+@Router("main")
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -17,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RouterManager.getInstance().redirect(MainActivity.this, "xxx://www.xxx.com/user/second", null);
+                RouterManager.getInstance().redirect(MainActivity.this, Uri.parse("beauty://xxx/second"), null);
             }
         });
     }
